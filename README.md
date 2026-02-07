@@ -14,10 +14,27 @@ An OpenSCAD model for creating customizable magnetic labels, optimized for multi
 
 ## Requirements
 
-- [OpenSCAD](https://openscad.org/) 2021.01 or later (for Customizer support)
+- [OpenSCAD](https://openscad.org/) 2021.01 or later
+- Python 3.8+ (for the export tool)
 - Multi-material 3D printer (e.g., Bambu Lab with AMS, Prusa MMU) - optional
 
 ## Quick Start
+
+### Using the Export Tool (Recommended)
+
+The export tool automatically calculates the optimal label size based on your text:
+
+```bash
+./export
+```
+
+Features:
+- **Automatic size calculation** - Measures exact text width using OpenSCAD
+- **Interactive color selection** - Choose foreground and background colors
+- **Preview before export** - See all parameters before exporting
+- **Exports both STL files** - Ready for multi-material printing
+
+### Using OpenSCAD Directly
 
 1. Open `magnetic_label.scad` in OpenSCAD
 2. Open the Customizer panel: **View → Customizer**
@@ -64,13 +81,19 @@ An OpenSCAD model for creating customizable magnetic labels, optimized for multi
 
 For two-color printing, export separate STL files:
 
-### Method 1: Using Customizer
+### Method 1: Export Tool (Recommended)
+```bash
+./export
+```
+The tool guides you through text input, size calculation, color selection, and exports both STL files automatically.
+
+### Method 2: Using Customizer
 1. Set `render_mode` to **"color1"**
 2. Render (**F6**) and export as `label_color1.stl`
 3. Set `render_mode` to **"color2"**
 4. Render (**F6**) and export as `label_color2.stl`
 
-### Method 2: Command Line
+### Method 3: Command Line
 ```bash
 # Export color 1 (base, frame, text)
 openscad -o label_color1.stl -D 'render_mode="color1"' magnetic_label.scad

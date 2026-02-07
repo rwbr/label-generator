@@ -71,6 +71,12 @@ text_offset_x = 0; // [-20:0.5:20]
 // Text vertical offset in mm
 text_offset_y = 0; // [-20:0.5:20]
 
+/* [Preview Colors] */
+// Preview color for base, frame, and text
+preview_color1 = "Black"; // [Black, DimGray, Gray, Navy, DarkRed, DarkGreen, SaddleBrown, Purple]
+// Preview color for inlay/background
+preview_color2 = "White"; // [White, Yellow, LightGray, Cyan, Lime, Orange, Pink, LightBlue]
+
 /* [Calculated Values] */
 // Base thickness is calculated automatically
 base_thickness = magnet_height + min_base_under_magnet;
@@ -207,8 +213,8 @@ module color2_parts() {
 
 if (render_mode == "all") {
     // Preview with colors
-    color("DimGray") color1_parts();
-    color("White") color2_parts();
+    color(preview_color1) color1_parts();
+    color(preview_color2) color2_parts();
 } else if (render_mode == "color1") {
     // Export: Color 1 only
     color1_parts();
