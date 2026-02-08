@@ -245,7 +245,7 @@ def calculate_optimal_label_size(text, font_size, use_icon=False, icon_size=10):
     if use_icon:
         content_width += icon_size + padding
 
-    content_height = max(text_height, icon_size if use_icon else 0) + (2 * padding)
+    content_height = max(font_size, icon_size if use_icon else 0) + (2 * padding)
 
     # Add border
     label_width = content_width + (2 * border)
