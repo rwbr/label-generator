@@ -9,7 +9,7 @@ render_mode = "all"; // [all:Preview with colors, color1:Color 1 only (base/fram
 
 /* [Text] */
 // Text to display on the label
-label_text = "ASA";
+label_text = "PLA+";
 // Font name and style (e.g. "Arial:style=Bold")
 font_name = "Arial:style=Bold";
 // Font size in mm

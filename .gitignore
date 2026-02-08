@@ -117,3 +117,4 @@ cython_debug/
 .Trashes
 ehthumbs.db
 Thumbs.db
+.claude

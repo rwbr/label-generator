@@ -2,7 +2,7 @@
 
 An OpenSCAD model for creating customizable magnetic labels, optimized for multi-material 3D printing.
 
-![Label Preview](docs/preview.png)
+![Label Preview](/docs/preview2.jpeg)
 
 ## Features
 
@@ -17,6 +17,8 @@ An OpenSCAD model for creating customizable magnetic labels, optimized for multi
 - [OpenSCAD](https://openscad.org/) 2021.01 or later
 - Python 3.8+ (for the export tool)
 - Multi-material 3D printer (e.g., Bambu Lab with AMS, Prusa MMU) - optional
+
+![Editing in OpenSCAD](/docs/openscad.png)
 
 ## Quick Start
 

@@ -2,7 +2,7 @@
 
 This project generates parametric, magnetic labels in OpenSCAD -- optimized for multi-material 3D printing with two colors. The labels consist of a base plate with magnet cavities, a frame, an inlay surface, and raised text (optionally with an icon). Two separate STL files enable export for multi-material printers.
 
-![Label Preview](preview2.jpeg)
+![Label Preview](/docs/preview2.jpeg)
 
 ---
 
